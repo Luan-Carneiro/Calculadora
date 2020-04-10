@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calc">
+        <h1>Calculadora</h1>
+        <div id="resultBox">
+            <div>
+                <p id="HistoryBox"></p>
+            </div>
+            <div>
+                <p id="OutputBox"></p>
+            </div>
+        </div>
+        <div id="keyboard">
+            <div>
+                <input type="button" value="C" class="valuesButtons" onclick="clearAll()">
+            </div>
+            <div>
+                <input type="button" class="valuesButtons" value="7" onclick="setNumberOnOutput(7)">
+                <input type="button" class="valuesButtons" value="8" onclick="setNumberOnOutput(8)">
+                <input type="button" class="valuesButtons" value="9" onclick="setNumberOnOutput(9)">
+                <input type="button" class="valuesButtons" id="SumButton" value="+" onclick="CountType('Sum')">
+            </div>
+            <div>
+                <input type="button" class="valuesButtons" value="4" onclick="setNumberOnOutput(4)">
+                <input type="button" class="valuesButtons" value="5" onclick="setNumberOnOutput(5)">
+                <input type="button" class="valuesButtons" value="6" onclick="setNumberOnOutput(6)">
+                <input type="button" class="valuesButtons" id="SubButton" value="-" onclick="CountType('Sub')">
+            </div>
+            <div>
+                <input type="button" class="valuesButtons" value="1" onclick="setNumberOnOutput(1)">
+                <input type="button" class="valuesButtons" value="2" onclick="setNumberOnOutput(2)">
+                <input type="button" class="valuesButtons" value="3" onclick="setNumberOnOutput(3)">
+                <input type="button" class="valuesButtons" id="MultButton" value="*" onclick="CountType('Mult')">
+            </div>
+            <div>
+                <input type="button" class="valuesButtons" value="0" onclick="setNumberOnOutput(0)">
+                <input type="button" id="point" class="valuesButtons" value="." onclick="setNumberOnOutput('.')">
+                <input type="button" class="valuesButtons" id="EqualButton" value="=" onclick="GenerateResult()">
+                <input type="button" class="valuesButtons" id="DivButton" value="/" onclick="CountType('Div')">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Relate um erro para: luan.mcarneiro15@gmail.com</p>
+        <p>Obs: Não use dois operadores aritméticos<br> em um unico calculo</p>
+        <p id="copyright">&copy;LuanMelo2020</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

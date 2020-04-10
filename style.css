@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* CORPO DA PAGÍNA */
+
+body {
+    background-color: #34495e;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: 5px;
+}
+
+#calc {
+    background-color: white;
+    position: relative;
+    width: 300px;
+    height: 470px;
+    margin: auto;
+    text-align: center;
+    top: 50px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px black;
+}
+/* ----------------------------------------------------------------- */
+
+/* Animação do Calc */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+        transform: translateY(-8%);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0%);
+    }
+}
+
+#calc {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* Simple */
+
+/* ----------------------------------------------------------------- */
+
+.valuesButtons {
+    background: none;
+    border: none;
+    border: solid 2px #95a5a6;
+    background: #95a5a6;
+    width: 50px;
+    height: 50px;
+    font-size: 15pt;
+    margin-bottom: 4px;
+    border-radius: 100px;
+    color: white;
+    transition: 0.30s;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.valuesButtons:hover {
+    background-color: #34495e;
+    border-color: #34495e;
+}
+
+#keyboard {
+    position: relative;
+    top: 45px;
+}
+
+/* ----------------------------------------------------------------- */
+
+#resultBox {
+    background-color: #dcdfe2;
+    position: relative;
+    top: 20px;
+    width: 300px;
+    height: 90px;
+    text-align: right;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#HistoryBox {
+    font-size: 15pt;
+    position: relative;
+    top: 5px;
+    color: rgb(138, 136, 134);
+    right: 10px;
+}
+
+#OutputBox {
+    font-size: 25pt;
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+
+/* ----------------------------------------------------------------- */
+
+#SumButton {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    font-size: 18pt;
+}
+
+#SumButton:hover {
+    background-color: #229251;
+    border-color: #229251;
+}
+
+#SubButton {
+    background-color: #9b59b6;
+    border-color: #9b59b6;
+    font-size: 18pt;
+}
+
+#SubButton:hover {
+    background-color: #673b79;
+    border-color: #623872;
+}
+
+#MultButton {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    font-size: 18pt;
+}
+
+#MultButton:hover {
+    background-color: #af3b2e;
+    border-color: #af3b2e;
+}
+
+#DivButton {
+    background-color: #e67e22;
+    border-color: #e67e22;
+    font-size: 18pt;
+}
+
+#DivButton:hover {
+    background-color: #a85d1b;
+    border-color: #a85d1b;
+}
+
+#EqualButton {
+    background-color: #f1c40f;
+    border-color: #f1c40f;
+    font-size: 18pt;
+}
+
+#EqualButton:hover {
+    background-color: #b8950b;
+    border-color: #b8950b;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* RODAPÉ DA PAGÍNA */
+
+footer {
+    text-align: center;
+    position: relative;
+    top: 60px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+    /* Atrubuindo a animação ao objeto */
+
+    animation-name: fade1;
+    animation-duration: 1.5s;
+}
+
+#copyright {
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: 10px;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Animação do Footer */
+
+@keyframes fade1 {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+        transform: translateY(10%);
+    } to {
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0%);
+    }
+}
